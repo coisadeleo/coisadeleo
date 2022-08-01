@@ -1,0 +1,142 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  /* background-image: url(https://wallpaperaccess.com/full/17514.jpg); */
+  color: #ffffff;
+  font-size: 1.6rem;
+  background-color: #000000;
+  font-family: "Poppins", sans-serif;
+}
+
+.full-container {
+  display: flex;
+  height: 100vh;
+}
+.half-container {
+  width: 50%;
+}
+
+.center-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.new-container {
+  display: flex;
+  flex-direction: column;
+}
+.left-card {
+  padding: 8rem;
+}
+
+.left-logo {
+  font-size: 6rem;
+}
+.left-title {
+  font-size: 3rem;
+}
+.left-description {
+  margin: 3rem 0;
+}
+
+.buttons {
+  /* max-width: 60rem; */
+
+  gap: 4rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0rem;
+  overflow: hidden;
+}
+
+.button {
+  width: 100%;
+  height: 6rem;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.6rem;
+  background-color: #ffffff;
+}
+
+.right-card {
+  background-color: #ffffff;
+  max-width: 60rem;
+  overflow: hidden;
+  margin: 2rem 0rem 0rem 0rem;
+}
+
+.card-question {
+  background-color: #7026d9;
+  height: 20rem;
+}
+.card-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  align-items: center;
+}
+
+.card-answer {
+  color: #000000;
+  min-height: 14rem;
+  padding: 3rem 1.5rem;
+}
+
+.right-card,
+.button {
+  border-radius: 0.5rem;
+}
+
+.blur {
+  filter: blur(5px);
+}
+
+@media (max-width: 1024px) {
+  .full-container {
+    flex-direction: column;
+    height: 100%;
+  }
+  .half-container {
+    width: 100%;
+  }
+  .left-card {
+    padding: 2rem;
+  }
+  .right-card {
+    max-width: 100%;
+    margin: 2rem;
+  }
+
+  .buttons {
+    max-width: 100%;
+    margin: 0rem 2rem;
+  }
+}
+
+.gradient-background {
+  background: linear-gradient(300deg, #130a0a, #302d2d);
+  background-size: 120% 120%;
+  animation: gradient-animation 12s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.hover-effect {
+  background-color: #ffffff;
+  color: #000000;
+}
+.hover-effect:hover {
+  color: #ffffff;
+  background-color: #7026d9;
+}
